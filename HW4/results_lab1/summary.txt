@@ -1,0 +1,4 @@
+Average (MA) system: smooths high-frequency content (cos 0.95 attenuated).
+Difference system: emphasizes transitions / high-frequency content (cos 0.95 retained, low freq reduced).
+Constant input -> MA yields ramp to constant plateau, difference yields impulse at boundaries.
+Composite signal -> MA smooths envelope, difference highlights rapid oscillations.

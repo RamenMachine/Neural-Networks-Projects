@@ -1,0 +1,21 @@
+Lab 2 Analysis
+================
+
+Image: boat
+  Original shape: (507, 513, 4), color=True
+  Box filter mean intensity: 0.5087
+  Mean abs( Sobel-like ): 0.1723
+  Edge magnitude mean: 0.0649
+
+Image: barbara
+  Original shape: (510, 511, 4), color=True
+  Box filter mean intensity: 0.4354
+  Mean abs( Sobel-like ): 0.1828
+  Edge magnitude mean: 0.0639
+
+Observations:
+- The 3x3 box filter smooths fine detail (blurs edges, reduces noise).
+- The Sobel-like kernel emphasizes vertical transitions (left/right intensity changes).
+- Horizontal vs vertical simple [-1 2 -1] filters isolate edges aligned orthogonally.
+- Edge magnitude image highlights strong gradients regardless of orientation.
+- Color processing per channel followed by grayscale edges prevents color artifacts in edge maps.
